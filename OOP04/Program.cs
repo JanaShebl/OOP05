@@ -58,6 +58,22 @@
 
 
             #endregion
+
+            #region Q4
+
+            // a) What is an Extension Method?
+            // method for extending and adding a new methods to an existing type without any modifications in the old code
+
+            // b) What keyword must be used in the first parameter of an extension method?
+            // (this)
+
+            // c) Where must an extension method be declared?
+            // inside the static class
+
+            // d) Can an extension method access private members of the class it extends?
+            // no
+
+            #endregion
         }
     }
 }
