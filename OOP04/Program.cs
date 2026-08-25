@@ -142,6 +142,12 @@
             // 5 Static Constructor
 
             #endregion
+
+            #region Q6.7
+
+            // static class
+
+            #endregion
         }
     }
 }
