@@ -30,5 +30,6 @@ namespace OOP04
             Street = address.Street;
             BuildingNumber = address.BuildingNumber;
         }
+        public string GetCity { get; set; }
     }
 }

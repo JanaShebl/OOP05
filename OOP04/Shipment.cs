@@ -166,6 +166,10 @@ namespace OOP04
         }
 
         public abstract Shipment CopyShipment();
+        public Shipment ShallowCopy()
+        {
+            return (Shipment) this.MemberwiseClone();
+        }
     }
 
 

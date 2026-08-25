@@ -93,11 +93,23 @@
 
             #region Q6.1
 
-            StandardShipment s1 = new StandardShipment("jl555", "laptop", 656, 52.5m, new DeliveryAddress("giza", "zayed", 111));
-            StandardShipment s2 = s1;
-            s1.PrintShipment();
-            Console.WriteLine("______________________________");
-            s2.PrintShipment();
+            //StandardShipment s1 = new StandardShipment("jl555", "laptop", 656, 52.5m, new DeliveryAddress("giza", "zayed", 111));
+            //StandardShipment s2 = s1;
+            //s1.PrintShipment();
+            //Console.WriteLine("______________________________");
+            //s2.PrintShipment();
+
+            #endregion
+
+            #region Q6.2
+
+            //StandardShipment s3 = new StandardShipment("jl555", "laptop", 656, 52.5m, new DeliveryAddress("giza", "zayed", 111));
+            //StandardShipment copy=(StandardShipment)s3.ShallowCopy();
+            //copy.Destination.GetCity = "Cairo";
+            //s3.PrintShipment();
+            //Console.WriteLine("______________________________");
+            //copy.PrintShipment();
+            //Console.WriteLine(object.ReferenceEquals(s3, copy));
 
             #endregion
         }
