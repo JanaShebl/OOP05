@@ -148,6 +148,12 @@
             // static class
 
             #endregion
+
+            #region Q6.7
+
+            // extention method
+
+            #endregion
         }
     }
 }
