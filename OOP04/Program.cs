@@ -41,6 +41,23 @@
             // if the business case require an isolation between objects
 
             #endregion
+
+            #region Q3
+
+            // a) What is a static field, and how is it different from an instance field ?
+            // static field is shared by all classes , you cannot access instance field within a static ,static field created once (العكس لل instance بس يقدر يوصل لل static , instance members)
+
+            // b) What is a static method? Can a static method directly access instance members? 
+            // static method belongs to the class and cannot access instance members directly
+
+            // c) What is a static constructor, and when is it executed?
+            // static ctor => used to intialize static member , executes at runtime (it happens first)
+
+            // d) What is a static class? Can you create an object from a static class?
+            // this class contain only static members ,you cannot create an object from it
+
+
+            #endregion
         }
     }
 }
