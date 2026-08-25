@@ -74,6 +74,22 @@
             // no
 
             #endregion
+
+            #region Q5
+
+            // a) What is a Partial Class?
+            // many classes that must use (partial) key word and the same namespace , they are combined at the run time
+
+            // b) Why would a developer split one class into multiple files?
+            // improve readability , organize large classes
+
+            // c) What is a Partial Method?
+            // method without an implementation,it can be optionally implemented in other class
+
+            // d) What happens if a declared partial method has no implementation?
+            // the compiler removes any calls of it
+
+            #endregion
         }
     }
 }
