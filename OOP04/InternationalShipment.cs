@@ -95,6 +95,11 @@ namespace OOP04
         {
             return 0.12m * EstimatedCost();
         }
+
+        public override Shipment CopyShipment()
+        {
+            return new InternationalShipment(TrackingCode,Description,Weight,DeliveryFee,Destination,DestinationCountry,CustomsFee);
+        }
     }
 
 }

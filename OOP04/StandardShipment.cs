@@ -46,6 +46,10 @@ Shipment SH003 has been Delivered.
         {
             return 0.05m * EstimatedCost();
         }
+
+        public override Shipment CopyShipment() {
+            return new StandardShipment(TrackingCode, Description, Weight, DeliveryFee,Destination);
+        }
     }
 
 }

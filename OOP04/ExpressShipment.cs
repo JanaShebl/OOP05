@@ -60,6 +60,11 @@ namespace OOP04
         {
             return 0.08m * EstimatedCost();
         }
+
+        public override Shipment CopyShipment()
+        {
+            return new ExpressShipment(TrackingCode, Description, Weight, DeliveryFee,Destination, ExtraFee);
+        }
     }
 
 }

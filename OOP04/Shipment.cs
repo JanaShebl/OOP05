@@ -164,6 +164,8 @@ namespace OOP04
         {
             return $"Tracking Code: {TrackingCode}, Status: {Status}";
         }
+
+        public abstract Shipment CopyShipment();
     }
 
 

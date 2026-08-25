@@ -90,6 +90,16 @@
             // the compiler removes any calls of it
 
             #endregion
+
+            #region Q6.1
+
+            StandardShipment s1 = new StandardShipment("jl555", "laptop", 656, 52.5m, new DeliveryAddress("giza", "zayed", 111));
+            StandardShipment s2 = s1;
+            s1.PrintShipment();
+            Console.WriteLine("______________________________");
+            s2.PrintShipment();
+
+            #endregion
         }
     }
 }
