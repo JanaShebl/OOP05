@@ -68,6 +68,7 @@ namespace OOP04
 
         public override Shipment DeepCopy()
         {
+            TotalShipmentsCreated++;
             DeliveryAddress clonedAddress = new DeliveryAddress(this.Destination);
             return new ExpressShipment(TrackingCode, Description, Weight, DeliveryFee, clonedAddress, ExtraFee);
         }

@@ -104,6 +104,7 @@ namespace OOP04
             Weight = 1;
             DeliveryFee = 50;
             Destination = new DeliveryAddress("Unknown", "Unknown", 0);
+            TotalShipmentsCreated++;
         }
 
         // • The second constructor receives trackingCode, description, weight, deliveryFee, and destination.
@@ -119,6 +120,7 @@ namespace OOP04
             Weight = weight;
             DeliveryFee = deliveryFee;
             Destination = new DeliveryAddress(destination);
+            TotalShipmentsCreated++;
         }
 
         //  UpdateDeliveryFee(decimal newFee): updates the fee only when newFee is greater than 0. 
@@ -168,10 +170,13 @@ namespace OOP04
         public abstract Shipment CopyShipment();
         public Shipment ShallowCopy()
         {
+            TotalShipmentsCreated++;
             return (Shipment) this.MemberwiseClone();
         }
 
         public abstract Shipment DeepCopy();
+
+        public static int TotalShipmentsCreated;
 
     }
 

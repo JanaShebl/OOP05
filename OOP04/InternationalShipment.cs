@@ -103,6 +103,7 @@ namespace OOP04
 
         public override Shipment DeepCopy()
         {
+            TotalShipmentsCreated++;
             DeliveryAddress clonedAddress = new DeliveryAddress(this.Destination);
             return new InternationalShipment(TrackingCode, Description, Weight, DeliveryFee, clonedAddress, DestinationCountry, CustomsFee);
         }

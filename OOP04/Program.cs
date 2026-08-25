@@ -124,6 +124,12 @@
             //copied.PrintShipment();
 
             #endregion
+
+            #region Q6.4
+
+            // static field
+
+            #endregion
         }
     }
 }

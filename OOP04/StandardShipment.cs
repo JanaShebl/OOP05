@@ -53,6 +53,7 @@ Shipment SH003 has been Delivered.
 
         public override Shipment DeepCopy()
         {
+            TotalShipmentsCreated++;
             DeliveryAddress clonedAddress = new DeliveryAddress(this.Destination);
             return new StandardShipment(TrackingCode, Description, Weight, DeliveryFee, clonedAddress);
         }
