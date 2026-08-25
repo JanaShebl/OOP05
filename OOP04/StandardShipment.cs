@@ -50,6 +50,13 @@ Shipment SH003 has been Delivered.
         public override Shipment CopyShipment() {
             return new StandardShipment(TrackingCode, Description, Weight, DeliveryFee,Destination);
         }
+
+        public override Shipment DeepCopy()
+        {
+            DeliveryAddress clonedAddress = new DeliveryAddress(this.Destination);
+            return new StandardShipment(TrackingCode, Description, Weight, DeliveryFee, clonedAddress);
+        }
+
     }
 
 }

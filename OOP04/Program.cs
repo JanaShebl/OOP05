@@ -112,6 +112,18 @@
             //Console.WriteLine(object.ReferenceEquals(s3, copy));
 
             #endregion
+
+            #region Q6.3
+
+            //StandardShipment original = new StandardShipment("SH9001", "Laptop", 2.5, 100m, new DeliveryAddress("Cairo", "Tahrir", 10));
+            //StandardShipment copied = (StandardShipment)original.DeepCopy();
+            //copied.Destination.GetCity = "fayoum";
+            //Console.WriteLine(object.ReferenceEquals(original.Destination, copied.Destination));
+            //Console.WriteLine(object.ReferenceEquals(original, copied));
+            //original.PrintShipment();
+            //copied.PrintShipment();
+
+            #endregion
         }
     }
 }

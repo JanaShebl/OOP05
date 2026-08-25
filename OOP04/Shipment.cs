@@ -170,6 +170,9 @@ namespace OOP04
         {
             return (Shipment) this.MemberwiseClone();
         }
+
+        public abstract Shipment DeepCopy();
+
     }
 
 

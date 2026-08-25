@@ -100,6 +100,12 @@ namespace OOP04
         {
             return new InternationalShipment(TrackingCode,Description,Weight,DeliveryFee,Destination,DestinationCountry,CustomsFee);
         }
+
+        public override Shipment DeepCopy()
+        {
+            DeliveryAddress clonedAddress = new DeliveryAddress(this.Destination);
+            return new InternationalShipment(TrackingCode, Description, Weight, DeliveryFee, clonedAddress, DestinationCountry, CustomsFee);
+        }
     }
 
 }
