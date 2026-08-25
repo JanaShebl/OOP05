@@ -178,6 +178,11 @@ namespace OOP04
 
         public static int TotalShipmentsCreated;
 
+        public static int GetTotalShipmentsCreated()
+        {
+            return TotalShipmentsCreated;
+        }
+
     }
 
 

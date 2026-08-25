@@ -130,6 +130,12 @@
             // static field
 
             #endregion
+
+            #region Q6.5
+
+            // Console.WriteLine(Shipment.TotalShipmentsCreated);
+
+            #endregion
         }
     }
 }
