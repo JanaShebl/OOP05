@@ -183,6 +183,11 @@ namespace OOP04
             return TotalShipmentsCreated;
         }
 
+        static Shipment(){
+            TotalShipmentsCreated = 0;
+            Console.WriteLine("Shipment System Initialized");
+        }
+
     }
 
 

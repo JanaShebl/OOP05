@@ -136,6 +136,12 @@
             // Console.WriteLine(Shipment.TotalShipmentsCreated);
 
             #endregion
+
+            #region Q6.6
+
+            // 5 Static Constructor
+
+            #endregion
         }
     }
 }
